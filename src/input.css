@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.textimage {
+    background-image: linear-gradient(to right, rgb(26, 201, 186), rgb(170, 165, 165) );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;  
+   
+}
+
+.textimage:hover{
+    opacity: 0.4;
+}
+
+.addText {
+    animation: bounce infinite ease-in-out 0.2s alternate-reverse forwards;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2px);
+    }    
+}
+
+.listItems {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.726);
+    border-radius: 10px;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+    padding: 5px;
+    color: white
+}
+
+.listInput{
+    background: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    color: rgb(255, 255, 255) ;
+    width: 100%;
+    border: 2px ;
+    font-size: 1.5vh;
+}
+
+.useablebtn {
+    display: flex;
+    gap: 10px;
+}
+
+.listInput:not(:read-only) {
+    background-image: linear-gradient(to right, rgb(26, 201, 186), rgb(170, 165, 165) );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.fulllist{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.alert-success{
+    background-color: rgba(86, 218, 86, 0.596);
+    color:rgba(255, 255, 255, 0.747);
+    opacity: 0.9;
+}
+
+.alert-unsuccessful{
+    background-color: rgba(243, 127, 61, 0.76);
+    color:rgb(255, 255, 255)
+}
+
+.clearbox-show {
+    display: block;
+    
+}
+.clearbox-show:hover {
+    border: 2px solid rgba(21, 78, 95, 0.596);;
+    padding: 2px;
+    border-radius: 10px;
+    
+}
+
+@media screen and (min-width:769px) {
+    .width1{
+        width: 40rem;
+    }
+}
